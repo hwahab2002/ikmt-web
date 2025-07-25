@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    
+    <style>body{font-size:13px; font-family:sans-serif}.text-uppercase{text-transform:uppercase}table.report-container {page-break-after:always; width:100%}thead.report-header {display:table-header-group;}.header-info{padding:15px 5px 15px 15px; border: 1px solid #d8d8d8; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between;}.header-info h2{font-size:17px; margin:0; margin-bottom:7px}.header-info h3{font-size:14px; font-weight:normal; margin:0}.header-info img{height:50px; padding-left:10px; border-left:1px solid #d8d8d8}.report-content-cell{font-size:13px}.info-table{border-collapse: collapse; width: 100%; margin-bottom: 30px;}.info-table td{font-size:13px; padding:7px; border:1px solid #d8d8d8;}.info-table td:first-child{width:140px}h3{margin-bottom:20px}h4{margin-top:30px}.dotted{border-bottom: 2px dotted #333333}</style>
+  </head>
+  <body onload="window.print()">
+    <table _ngcontent-c45="" class="report-container w-100">
+      <thead _ngcontent-c45="" class="report-header">
+      <tr _ngcontent-c45="">
+      <th _ngcontent-c45="" class="report-header-cell">
+      <div _ngcontent-c45="" class="header-info">
+      <div _ngcontent-c45="" class="text-center" style="width: 100%">
+      <h2 _ngcontent-c45="">ULUSAL
+      ELEKTRONİK
+      TEBLİGAT
+      SİSTEMİ</h2>
+      <!---->
+      <h3 _ngcontent-c45="" class="text-uppercase ng-star-inserted" lang="tr">
+      Hesap
+      Bilgileri </h3>
+      <!----><!----><!----></div>
+      <img _ngcontent-c45="" class="d-none" src="https://ptt.etebligat.gov.tr/assets/app/media/img/logos/uets-top-logo.png"></div>
+      </th>
+      </tr>
+      </thead>
+      <tbody _ngcontent-c45="" class="report-content">
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="" class="report-content-cell">
+      <div _ngcontent-c45="" class="main"><!---->
+      <div _ngcontent-c45="" class="ng-star-inserted">
+      <table _ngcontent-c45="" class="table info-table mt-4">
+      <tbody _ngcontent-c45="">
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="" width="260">
+      Müşteri Tipi </td>
+      <td _ngcontent-c45="">
+      GERCEK , İŞLEM
+      YETKİLİSİ <span _ngcontent-c45="" class="text-uppercase d-none ng-star-inserted" lang="tr"><br>
+      </span></td>
+      </tr>
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">Durum</td>
+      <td _ngcontent-c45="">
+      Aktif </td>
+      </tr>
+      <!---->
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">
+      e-Tebligat
+      Adresi </td>
+      <td _ngcontent-c45="">42940-49105-69755 </td>
+      </tr>
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">
+      T.C. Kimlik
+      No. </td>
+      <td _ngcontent-c45="">98059203466</td>
+      </tr>
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">
+      Ad Soyad </td>
+      <td _ngcontent-c45="">REDA MUHAMMAD MUHAMMAD ABDULDAYEM</td>
+      </tr>
+      <!---->
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">
+      Zorunlu Alıcı
+      </td>
+      <td _ngcontent-c45="">
+      - </td>
+      </tr>
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">Sabit
+      Telefon</td>
+      <td _ngcontent-c45="">-</td>
+      </tr>
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">Kep
+      Adresi</td>
+      <td _ngcontent-c45="">-</td>
+      </tr>
+      <!---->
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">E-posta</td>
+      <td _ngcontent-c45="">Moha.SolimanFZ@gmail.com
+</td> </tr>
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">Adres</td>
+      <td _ngcontent-c45="">Garipçe mah fehim sokak no 11 daire 3 Sarıyer İstanbul</td>
+      </tr>
+      <tr _ngcontent-c45="">
+      <td _ngcontent-c45="">Ekleme
+      Tarihi</td>
+      <td _ngcontent-c45="">22.07.2025</td>
+      </tr>
+      </tbody>
+      </table>
+      <!---->
+      <div _ngcontent-c45="" class="mt-5 d-none ng-star-inserted">
+      <h4 _ngcontent-c45="" class="text-uppercase" lang="tr">
+      Yetkili Olduğu
+      Kurumlar </h4>
+      <!---->
+      <div _ngcontent-c45="" class="ng-star-inserted"><!----></div>
+      </div>
+      </div>
+      <!----><!----><!----></div>
+      </td>
+      </tr>
+      </tbody>
+    </table>
+</body></html>

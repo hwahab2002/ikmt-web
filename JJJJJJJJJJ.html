@@ -1,0 +1,417 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+  
+<link href="https://e-ikamet.goc.gov.tr/Content/css?v=gmR4tV9TL43f3dnwiX0Uhg2MRLVNWrZzH0fFpX30amc1" rel="stylesheet"/>
+
+    <script src="https://e-ikamet.goc.gov.tr/Scripts/kale/eIkametClientMessages.js?v=636788375456675885"></script>
+
+    <script src="https://e-ikamet.goc.gov.tr/bundles/jquery?v=dP2yITnHXE1VENxIjrMA8762C6o0WKzQYtJrA-_gHUs1"></script>
+
+    <script src="https://e-ikamet.goc.gov.tr/bundles/other?v=7pWClGlJi2X_yqigSCHgm3Oy99Wwv-qZI3i_tEa_v-81"></script>
+
+    <script src="https://e-ikamet.goc.gov.tr/bundles/bootstrap?v=JTCGTnuDd2A7amBEBExop4shywC3yathSBQ8dkq4-O41"></script>
+
+    <script src="/bundles/kendo?v=WFX7eGUju5y3JXdmsCnosMKTnKxBmHjXo6RdNV4SPAc1"></script>
+
+    <script src="https://e-ikamet.goc.gov.tr/bundles/kale?v=oBn1VH__3QSgfZK642VwfQEMsFZsi8kB_rWRhYHqPIM1"></script>
+
+    <script src="https://e-ikamet.goc.gov.tr/bundles/kalewidgets?v=SdHNSqrs3A8ucbvpArHjEcUT1RR7CGa2WRww9cFa5rw1"></script>
+
+    <script src="https://e-ikamet.goc.gov.tr/bundles/binders?v=RSmgDh9Gz7BBBvgQmm_5SvzIZGdd4MDn8R7P21BOkCE1"></script>
+
+    
+
+
+    <link href="https://e-ikamet.goc.gov.tr/favicon.ico" rel="shortcut icon" type="image/x-icon" />    
+            <script src='https://www.google.com/recaptcha/api.js?hl=tr-TR'></script>
+
+    <script src="https://e-ikamet.goc.gov.tr/Scripts/kendo/2015.3.1111/cultures/kendo.culture.tr-TR.min.js"></script>
+    <script src="https://e-ikamet.goc.gov.tr/Scripts/kendo-global/kendo.tr-TR.js"></script>
+
+    <meta name="description" content="E Ikamet" />
+    <script id="template" type="text/x-kendo-tmpl">
+        #
+        if (data.aktif == false) {#
+        <span class="tbd"> ${data.aciklama} </span>
+        # } else { #
+        <span>${data.aciklama}</span> #
+        }#
+    </script>
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+
+    if (window.location.href.search("e-ikamet.goc.gov.tr") != -1) {
+        ga('create', 'UA-85167526-1', 'auto');
+        ga('send', 'pageview');
+    }
+
+    </script>
+
+
+
+</head>
+<body class="">
+    <script type="text/javascript">kendo.culture("tr-TR");</script>
+    <script type="text/javascript">
+
+        var applicationUrl = ('/' == "/" ? 'https://e-ikamet.goc.gov.tr/' : '/');
+
+    </script>
+    <script type="text/javascript">
+        // One module to rule them all!z
+        var module = new kale.Module();
+    </script>
+    <header>
+        <div class="navbar navbar-inverse top--header">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="goc--logo">
+                        <a href="/">
+                        </a>
+                    </div>
+
+                  
+
+                    </div>
+
+                    <div class="home-button-new">
+                      
+                    </div>
+
+                    <div class="logout-button-new logout-button-new-ic">
+
+                             
+
+                    </div>
+
+                    
+
+                    
+                    <div class="turk--bayrak">
+
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-inverse bottom--header">
+            <div class="container">
+                <div class="row">
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-inverse layout-image--header">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="navbar navbar-inverse basvuru-islemleri hidden-xs">
+
+        <div class="basvuru-satiri">
+            <div class="fixed--left--box"></div>
+            <div class="right--box">
+                <span>
+        
+    </span>
+
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <br />
+     
+    <div id="body">
+        <div class="container body-content">
+            <div class="row">
+                
+                <section class="content-wrapper clear-fix">
+                     
+                            
+
+
+<script>
+    $(document).ready(function () {
+        $("#btnCancelSecForm").click(function (e) {
+            //var implicitstepid = $(this).attr("implicitstepid");
+            //$("#stepId").val(implicitstepid);
+            $("#stepId").val($("#GoToStep").val());
+        });
+
+        $("#btnNext").click(function (e) {
+            $("#stepId").val(null);
+
+            BeforePostBack();
+        });
+
+        $("#btnPrev").click(function (e) {
+            $("#stepId").val(null);
+
+            BeforePostBack();
+        });
+    });
+
+    function BeforePostBack() {
+        ShowLoadingPanel();
+    }
+</script>
+
+
+<div>
+
+
+
+
+
+
+</div>
+
+        
+
+<div id="stepPageDiv" class="form-group col-lg-12 form-bg-new">
+<form action="https://e-ikamet.goc.gov.tr/Ikamet/BasvuruSteps/ProcessStep" id="submitForm" method="post"><input id="wizardType" name="wizardType" type="hidden" value="TemsilciIlkSayfa" /><input id="stepId" name="stepId" type="hidden" value="" />        <div class="clearfix"></div>
+
+            <button style="" class="btn-back" type="submit" name="command" value="Prev" id="btnPrev"><</button>
+            <button class="btn-next" type="submit" name="command" value="Next" id="btnNext">></button>
+
+
+
+
+
+        <div id="moduleDiv">
+            <div id="content">    
+
+
+
+
+    <div style="text-align: center;">
+        <br />
+        <br />
+        <br />
+            <br />
+      my name is hisham testing from home    <label class="label--name" for="TemsilAdinaBasvuruYapacagim"></label>
+
+    </div>
+</div>
+        </div>
+        <div class="clearfix"></div>
+        <div id="zorunluAlanUyaridiv">
+            <div class="clearfix"></div>
+<span class="zorunlu-alan-aciklama"></span>
+
+
+
+
+<style>
+    .zorunlu-alan-aciklama{
+        font-weight:bold;
+    }
+</style>
+        </div>
+        <br />
+        <br />
+            <button style="" class="btn-back" type="submit" name="command" value="Prev" id="btnPrev"><</button>
+            <button class="btn-next" type="submit" name="command" value="Next" id="btnNext">></button>
+        <div id="stepsLoadingPanel">
+            
+        </div>
+        <script>
+            var MessageType = {
+                Hata: 1,
+                Uyari: 2,
+                Basari: 3,
+                Onay: 4,
+                Soru: 5
+            }
+
+            $(document).ready(function () {
+                $("#submitForm").attr("novalidate", "");
+
+
+                var module = new kale.oldModule({ target: $('#moduleDiv') });
+                module.refresh('model');
+
+                $("[required='required']").removeAttr('required');
+
+                function ShowErrorMessage(errorText) {
+                    noty({ text: errorText, type: 'error', layout: 'bottom' });
+                }
+
+                function ShowMessage(message, messageType) {
+                    if (messageType == MessageType.Hata) {
+                        window.kale.showAlert(message);
+                    }
+                    if (messageType == MessageType.Uyari) {
+                        window.kale.showInformation(message);
+                    }
+                }
+
+
+                                                                
+
+                InitializeTabs();
+
+                $('#loadImage').text(eIkametClientMessages.fotografSeciniz);
+                $('#removeImage').val(eIkametClientMessages.fotografiSil);
+            });
+
+            function InitializeTabs() {
+
+                var tabStripElement = $("#tabstrip").kendoTabStrip({
+                    tabPosition: "top",
+                    scrollable: false,
+                    select: onTabSelect
+                });
+
+                var tabStrip = $("#tabstrip").kendoTabStrip().data("kendoTabStrip");
+
+                
+                    $("#tab" + "20").removeClass("k-state-default").addClass("tamamlanmamis-tab");
+                    $("#tab" + "20" + " span.k-link").css("color", "grey");
+                
+                
+                
+                    $("#tab" + "21").removeClass("k-state-default").addClass("tamamlanmamis-tab");
+                    $("#tab" + "21" + " span.k-link").css("color", "grey");
+                
+                
+                
+                    $("#tab" + "30").removeClass("k-state-default").addClass("tamamlanmamis-tab");
+                    $("#tab" + "30" + " span.k-link").css("color", "grey");
+                
+                
+                tabStrip.activateTab($(".k-state-active"));
+            }
+
+            function onTabSelect(e) {
+                $("#stepId").val($(e.item).attr("id").substring(3));
+                BeforePostBack();
+                $("#submitForm").submit();
+            }
+
+            function DisableAllInputs() {
+                $("input").each(function (e) {
+
+                    var dropDownList = $(this).data("kendoDropDownList");
+                    if (dropDownList != undefined)
+                        dropDownList.enable(false);
+
+                    var datepicker = $(this).data("kendoDatePicker");
+                    if (datepicker != undefined)
+                        datepicker.enable(false);
+
+                    $(this).attr("disabled", "disabled");
+
+                    $("#wizardType").removeAttr("disabled");
+                    $("#stepId").removeAttr("disabled");
+                });
+
+                $("textarea").each(function (e) {
+                    $(this).attr("disabled", "disabled");
+                });
+            }
+            
+            function ShowLoadingPanel() {
+                var dummyHeight = $("#tabstrip").height() + 30;
+                var dummyWidth = 45;
+
+                $("#stepsLoadingPanel").width($("#stepPageDiv").width() + dummyWidth);
+                $("#stepsLoadingPanel").height($("#stepPageDiv").height() + dummyHeight + $("#zorunluAlanUyaridiv").height() + 25);
+                $("#stepsLoadingPanel").css({ top: (0 - dummyHeight), left: 0 });
+                $("#stepsLoadingPanel").show();
+            }
+
+            function HideLoadingPanel() {
+                $("#stepsLoadingPanel").hide();
+            }
+
+        </script>
+        <style type="text/css">
+            #stepsLoadingPanel{
+                display: none; 
+                position: absolute; 
+                z-index: 9999;
+                background-color: grey;
+                opacity: 0.1;
+                vertical-align: middle;
+            }
+        </style>
+</form></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="clear-fix"></div>
+    
+    <script>
+        $(document).ready(function () {
+            module.refreshAll();
+        })
+    </script>
+
+    
+    <script id="menu-template" type="text/x-kendo-template">
+        <li><span data-bind="text: Baslik"></span></li>
+    </script>
+    <input name="__RequestVerificationToken" type="hidden" value="5HHLqNWcV1UdgLpnZTp3dCg1NYKJY2vYQ1dQcuZ8STNKpAFe5JYwPkze4T2IvY7MNqi-6AqcC_MVJUeW6kg2eLemUoI8bY5lBzAbazLscXI1" />
+
+
+
+
+     
+</body>
+
+</html>
+
+
+<script>
+    function ExitToMainPage() {
+        window.location.href = kale.deriveUrl(this, '/');
+    }
+
+    function OneriIstekSikayetSayfasinaGit() {
+        window.open(kale.deriveUrl(this, '/Ikamet/OneriIstekSikayet'), "_self");
+    }
+
+    function ChangeLanguage(langtag) {
+        if (langtag == undefined)
+            langtag = document.getElementById("language-options").value;
+
+        kale.ajaxCall('/' + "Language/SetLanguage?langtag=" + langtag, {}, function (data) {
+            location.reload();
+        });
+    }
+
+    function GuvenliCikis() {
+        window.kale.confirmDialog("Uyari", 'e-Ikamet sisteminden &#231;ikis yapmak &#252;zeresiniz. Size g&#246;nderilen basvuru numarasi ile sisteme tekrar giris yapabilir ve basvurunuza devam edebilirsiniz.', function (dialogResult) {
+            if (dialogResult) {
+                kale.ajaxCall('/EIkametBase/ClearEIkametCookies', {}
+                ).success(function (e) {
+                    window.location.href = kale.deriveUrl(this, '/');
+                });
+            }
+        });
+    }
+</script>
+
